@@ -1,0 +1,11 @@
+procs: 1, cores: 1, n:24, time: 3.52144
+procs: 1, cores: 2, n:24, time: 1.83598
+procs: 1, cores: 4, n:24, time: 0.94295
+
+procs: 2, cores: 1, n:24, time: 1.82013
+procs: 2, cores: 2, n:24, time: 0.99734
+procs: 2, cores: 4, n:24, time: 0.59144
+
+procs: 4, cores: 1, n:24, time: 0.89893
+procs: 4, cores: 2, n:24, time: 0.51012
+procs: 4, cores: 4, n:24, time: 0.28427
