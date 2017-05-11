@@ -2,6 +2,8 @@
 #include "mpi.h"
 #include <cmath>
 #include <complex>
+#include <ctime>
+#include <cstdlib>
 
 using namespace std;
 

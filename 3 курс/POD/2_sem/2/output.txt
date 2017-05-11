@@ -1,13 +1,42 @@
+k: 1, qbits: 25, procs: 1, time: 33.5099
+k: 1, qbits: 25, procs: 2, time: 13.4974
+k: 1, qbits: 25, procs: 4, time: 6.75212
+k: 1, qbits: 25, procs: 8, time: 3.39224
 
+k: 1, qbits: 26, procs: 1, time: 66.7056
+k: 1, qbits: 26, procs: 2, time: 26.7638
+k: 1, qbits: 26, procs: 4, time: 13.4803
+k: 1, qbits: 26, procs: 8, time: 6.70671
 
+k: 1, qbits: 27, procs: 4, time: 27.0127
+k: 1, qbits: 27, procs: 8, time: 13.5893
 
-||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||
 
+k: 4, qbits: 25, procs: 1, time: 33.3979
+k: 4, qbits: 25, procs: 2, time: 16.9904
+k: 4, qbits: 25, procs: 4, time: 8.44863
+k: 4, qbits: 25, procs: 8, time: 4.26657
 
+k: 4, qbits: 26, procs: 1, time: 67.7424
+k: 4, qbits: 26, procs: 2, time: 33.2318
+k: 4, qbits: 26, procs: 4, time: 17.1034
+k: 4, qbits: 26, procs: 8, time: 8.54996
 
-||||||||||||||||||||||||||||||||||||||
+k: 4, qbits: 27, procs: 2, time: 68.4504
+k: 4, qbits: 27, procs: 4, time: 33.4982
+k: 4, qbits: 27, procs: 8, time: 17.0422
 
+k: 25, qbits: 25, procs: 1, time: 33.4027
+k: 25, qbits: 25, procs: 2, time: 17.1942
+k: 25, qbits: 25, procs: 4, time: 8.42103
+k: 25, qbits: 25, procs: 8, time: 4.27276
 
+k: 26, qbits: 26, procs: 1, time: 68.2742
+k: 26, qbits: 26, procs: 2, time: 33.1163
+k: 26, qbits: 26, procs: 4, time: 17.1156
+k: 26, qbits: 26, procs: 8, time: 8.4477
 
-||||||||||||||||||||||||||||||||||||||
-
+k: 27, qbits: 27, procs: 2, time: 66.6519
+k: 27, qbits: 27, procs: 4, time: 34.065
+k: 27, qbits: 27, procs: 8, time: 17.1335

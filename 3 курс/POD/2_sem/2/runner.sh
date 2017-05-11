@@ -12,7 +12,7 @@ do
         fi
         for procs in 1 2 4
         do
-            mpirun -np $procs ./main $n $K
+            mpirun -np $procs ./main $n $K >> output.txt
         done
         printf "\n" >> output.txt
     done
