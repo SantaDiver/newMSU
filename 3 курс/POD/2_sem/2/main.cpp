@@ -10,7 +10,7 @@ using namespace std;
 typedef complex<double> complexd;
 typedef unsigned long long ull;
 
-double MyRandom(unsigned seed)              { return (double) (rand_r(&seed)) / (RAND_MAX/100.0); }
+double MyRandom(unsigned & seed)              { return (double) (rand_r(&seed)) / (RAND_MAX/100.0); }
 ull getBit(ull a, ull k, ull n)             { return (a & (1 << (n - k))) >> (n - k); }
 ull withBit(ull & a, ull k, ull bit, ull n) {
     if (!bit) return a & (~(1 << (n - k)));
@@ -32,8 +32,9 @@ int main(int argc, char* argv[]) {
     complexd *A = new complexd[block_size], *B = new complexd[block_size];
 
     double start = MPI_Wtime();
+    unsigned seed1 = 179 + rank;
     for (ull i = 0; i < block_size; ++i)
-        A[i] = complexd(MyRandom(179 + rank),MyRandom(180 + rank));
+        A[i] = complexd(MyRandom(seed1),MyRandom(seed1));
 
     ull block_shift = (1 << (n - k)) / block_size;
 
