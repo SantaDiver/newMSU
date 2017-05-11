@@ -12,7 +12,10 @@ typedef unsigned long long ull;
 
 double MyRandom(unsigned seed)              { return (double) (rand_r(&seed)) / (RAND_MAX/100.0); }
 ull getBit(ull a, ull k, ull n)             { return (a & (1 << (n - k))) >> (n - k); }
-ull withBit(ull & a, ull k, ull bit, ull n) { return a | (bit << (n - k)); }
+ull withBit(ull & a, ull k, ull bit, ull n) {
+    if (!bit) return a & (~(1 << (n - k)));
+    return a | (bit << (n - k));
+}
 
 int main(int argc, char* argv[]) {
     int rank = 0, threads_cnt;
@@ -37,7 +40,7 @@ int main(int argc, char* argv[]) {
     if (block_shift == 0) {
         for (ull i = 0; i < block_size; ++i) {
             ull Ik = getBit(i, k, n);
-            B[i] = u[Ik][0] * A[withBit(i, k, 0, n)] + u[Ik][1] * A[withBit(i, k, 0, n)];
+            B[i] = u[Ik][0] * A[withBit(i, k, 0, n)] + u[Ik][1] * A[withBit(i, k, 1, n)];
         }
     }
     else {
